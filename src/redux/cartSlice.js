@@ -13,7 +13,7 @@ export const cartSlice=createSlice({
             state.items=state.items.filter(item=>item.id!==action.payload);
         },
         emptyCart:(state)=>{
-           return  state.items=[];
+           state.items=[];
            
         }
     }
